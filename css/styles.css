@@ -75,6 +75,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 70px;
+  margin-bottom: 130px;
 }
 .team-images {
   display: grid;
@@ -111,6 +112,58 @@ main {
 .features p {
   margin-bottom: 20px;
 }
+
+/* love & enjoy section  */
+.love-enjoy {
+  display: flex;
+  color: #727272;
+  gap: 70px;
+}
+.love-enjoy-features {
+  width: 50%;
+}
+.love-enjoy-features h1 {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+  margin-bottom: 24px;
+  border-left: #ff900e solid 5px;
+  padding-left: 20px;
+}
+.love-enjoy-features p {
+  margin-bottom: 30px;
+}
+.box-shadow {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.box-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.btn-text-love {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  text-align: center;
+}
+.love-section-img {
+  width: 50%;
+  position: relative;
+}
+.love-section-btn {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+}
+
 /* media query  */
 @media only screen and (max-width: 576px) {
   header {
@@ -150,8 +203,28 @@ main {
   }
   .features-section {
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
   }
   .features {
     margin-left: 20px;
+  }
+
+  /* love section */
+  .love-enjoy {
+    flex-direction: column;
+  }
+  .love-section-img img {
+    width: 100%;
+  }
+  .love-section-img {
+    width: 100%;
+  }
+  .love-enjoy-features {
+    width: 100%;
+  }
+  .love-section-btn {
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
   }
 }
