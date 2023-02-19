@@ -46,23 +46,71 @@ nav {
   font-weight: 700;
   font-size: 64px;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 .banner-text p {
   color: #727272;
   margin-bottom: 20px;
 }
-.banner-text button {
+.btn-regular {
   padding: 20px;
   border: 0px;
   color: white;
   border-radius: 8px;
   background-color: #ff900e;
   margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
 }
 .banner-image img {
   width: 100%;
+  margin-bottom: 50px;
 }
 
+/* Features section */
+main {
+  margin-top: 80px;
+}
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+}
+.team-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.team-images img {
+  width: 100%;
+}
+.features {
+  text-align: left;
+  color: #727272;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.features h1 {
+  font-weight: 500;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.of-our {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+.feature-text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #ff900e;
+}
+.features p {
+  margin-bottom: 20px;
+}
 /* media query  */
 @media only screen and (max-width: 576px) {
   header {
@@ -88,5 +136,22 @@ nav {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 30px;
+  }
+  .banner-text h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  /* features section  */
+  .team-images {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .features-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features {
+    margin-left: 20px;
   }
 }
